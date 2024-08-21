@@ -1,4 +1,4 @@
-FROM docker.io/library/alpine:latest AS build
+FROM --platform=linux/amd64 docker.io/library/alpine:latest AS build
 LABEL maintainer="https://github.com/gunchev/"
 
 ARG ARG_DEVPI_SERVER_VERSION
