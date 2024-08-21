@@ -2,7 +2,7 @@ version: '2'
 services:
 
   devpi:
-    image: "gunchev/devpi:latest"
+    image: "devpi:latest"
     volumes:
       - "./data:/data"
     ports:

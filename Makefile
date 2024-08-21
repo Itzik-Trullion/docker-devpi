@@ -22,7 +22,7 @@ help:
 
 
 build:
-	docker build build --tag devpi:latest  . -f Dockerfile --build-arg ARG_DEVPI_SERVER_VERSION=$(ARG_DEVPI_SERVER_VERSION) --build-arg ARG_DEVPI_WEB_VERSION=$(ARG_DEVPI_WEB_VERSION) --build-arg ARG_DEVPI_CLIENT_VERSION=$(ARG_DEVPI_CLIENT_VERSION)
+	docker build --tag devpi:latest  . -f Dockerfile --build-arg ARG_DEVPI_SERVER_VERSION=$(ARG_DEVPI_SERVER_VERSION) --build-arg ARG_DEVPI_WEB_VERSION=$(ARG_DEVPI_WEB_VERSION) --build-arg ARG_DEVPI_CLIENT_VERSION=$(ARG_DEVPI_CLIENT_VERSION)
 .PHONY: build
 
 
